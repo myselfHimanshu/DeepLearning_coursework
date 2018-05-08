@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Sentiment Classification</title>
+	<link rel="stylesheet" href="{{ url_for('static',
+		filename='style.css') }}">
+</head>
+
+<body>
+	<h3>Your text:</h3>
+
+	<div>{{ content }}</div>
+	<h3>Prediction:</h3>
+	<div>This text is <strong>{{ prediction }}</strong>
+			(probability: {{ probability }}%).
+	</div>
+
+	<div id='button'>
+		<form action="/">
+			<input type=submit value='Submit another review'>
+		</form>
+	</div>
+</body>
+
+</html>
